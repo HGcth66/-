@@ -1,0 +1,20 @@
+<tabs tabs="{{tabs}}" bindtabsItemChange="djtabschange">
+    <view class="collect">
+        <view class="collecttitle">
+            <text class="collecttext active">全部</text>
+            <text class="collecttext">正在热卖</text>
+            <text class="collecttext">即将上线</text>
+        </view>
+        <view class="collectcontent">
+            <navigator class="item" wx:for="{{collect}}" wx:key="goods_id" url="../../pages/goods_detail/index?goods_id={{item.goods_id}}">
+                <view class="img">
+                    <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://cdn.jsdelivr.net/gh/HGcth66/image/no.jpg'}}"></image>
+                </view>
+                <view class="goods">
+                    <view class="goodsname">{{item.goods_name}}</view>
+                    <view class="goodsjg">￥{{item.goods_price}}</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</tabs>

@@ -1,0 +1,134 @@
+    page{
+        padding-bottom: 90rpx;
+    }
+    .btn{
+        padding: 20rpx;
+        button{
+            width: 60%;
+        }
+    }
+    .info{
+        margin-top: -50rpx;
+        display: flex;
+        padding: 20rpx;
+        .leftinfo{
+            flex: 5;
+        }
+        .rightinfo{
+            flex: 3;
+            text-align: right;
+        }
+    }
+    .gwctext{
+        font-size: 40rpx;
+        padding: 20rpx;
+        border-top: 5rpx solid var(--themecolor);
+        border-bottom: 5rpx solid var(--themecolor);
+    }
+    .goodsitem{
+        .spgwc{
+            display: flex;
+            padding: 10rpx;
+            border-bottom: 1rpx solid #ccc;
+            .check{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .goodsimg{
+                flex: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                image{
+                    width: 80%;
+                }
+            }
+            .goodswrap{
+                flex: 4;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .goodsxx{
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+                .goodspricewrap{
+                    display: flex;
+                    justify-content: space-between;
+                    .goodsprice{
+                        color: var(--themecolor);
+                        font-size: 34rpx;
+                    }
+                    .jjwrap{
+                        display: flex;
+                        .leftbtn{
+                            width: 55rpx;
+                            height: 55rpx;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            align-items: center;
+                            border: 1rpx solid #ccc;
+                        }
+                        .jjtext{
+                            width: 55rpx;
+                            height: 55rpx;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            align-items: center;
+                            
+                        }
+                        .rightbtn{
+                            width: 55rpx;
+                            height: 55rpx;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            align-items: center;
+                            border: 1rpx solid #ccc;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 90rpx;
+        display: flex;
+        border-top: 1rpx solid #ccc;
+        .checkall{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .priceall{
+            flex: 4;
+            padding-right: 15rpx;
+            text-align: right;
+            .priceallwrap{
+                font-size: 32rpx;
+                color: var(--themecolor);
+            }
+        }
+        .js{
+            flex: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--themecolor);
+            color: #fff;
+            font-weight: 600;
+            font-size: 32rpx;
+        }
+    }

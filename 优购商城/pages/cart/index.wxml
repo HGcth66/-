@@ -1,0 +1,52 @@
+<view class="btn">
+    <button type="primary" plain bindtap="djchooseaddress" wx:if="{{!address.userName}}">添加收货地址</button>
+</view>
+<view wx:if="{{address.userName}}" class="info">
+    <view class="leftinfo">
+        <view>{{address.userName}}</view>
+        <view>{{address.provinceName+address.cityName+address.countyName+address.detailInfo}}</view>
+    </view>
+    <view class="rightinfo">
+        {{address.telNumber}}</view>
+</view>
+<view class="gwctext">购物车</view>
+<block wx:if="{{cart.length!=0}}"><view class="goodsitem" wx:for="{{cart}}" wx:key="goods_id">
+    <view class="spgwc">
+        <view class="check">
+            <checkbox-group bindchange="djchecked" data-id="{{item.goods_id}}">
+                <checkbox checked="{{item.checked}}"></checkbox>
+            </checkbox-group>
+        </view>
+        <navigator class="goodsimg">
+            <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+        </navigator>
+        <view class="goodswrap">
+            <view class="goodsxx">{{item.goods_name}}</view>
+            <view class="goodspricewrap">
+                <view class="goodsprice">￥{{item.goods_price}}</view>
+                <view class="jjwrap">
+                    <view class="leftbtn" bindtap="djjj" data-id="{{item.goods_id}}" data-opration="{{1}}">+</view>
+                    <view class="jjtext">{{item.num}}</view>
+                    <view class="rightbtn" bindtap="djjj" data-id="{{item.goods_id}}" data-opration="{{-1}}">-</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view></block>
+<block wx:else>
+<image mode="widthFix" src="https://cdn.jsdelivr.net/gh/HGcth66/image/no.jpg"></image>
+</block>
+<view class="footer">
+    <view class="checkall">
+        <checkbox-group bindchange="djcheckedall">
+            <checkbox checked="{{allchecked}}">全选</checkbox>
+        </checkbox-group>
+    </view>
+    <view class="priceall">
+        <view>合计：<text class="priceallwrap">￥{{totoilprice}}</text></view>
+        <view>包含运费</view>
+    </view>
+    <view class="js" bindtap="djjs">
+        结算（{{totoilnum}}）
+    </view>
+</view>

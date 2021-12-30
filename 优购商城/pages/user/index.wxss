@@ -1,0 +1,108 @@
+page {
+  background-color: #eee;
+}
+.infowrap {
+  height: 45vh;
+  position: relative;
+}
+.infowrap .imgwrap {
+  position: relative;
+}
+.infowrap .imgwrap .bg {
+  height: 45vh;
+  filter: blur(5rpx);
+}
+.infowrap .imgwrap .userinfo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.infowrap .imgwrap .userinfo .usericon {
+  border-radius: 50%;
+  width: 150rpx;
+  height: 150rpx;
+}
+.infowrap .imgwrap .userinfo .username {
+  margin-top: 40rpx;
+  font-size: 40rpx;
+  color: #fff;
+}
+.infowrap .userbtn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--themecolor);
+  border: 1rpx solid currentColor;
+  font-size: 38rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+.content {
+  position: relative;
+}
+.content .usermain {
+  position: absolute;
+  top: -40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding-bottom: 100rpx;
+}
+.content .usermain .history {
+  background-color: #fff;
+  display: flex;
+}
+.content .usermain .history navigator {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.content .usermain .history navigator .hisnum {
+  color: var(--themecolor);
+}
+.content .usermain .orders {
+  background-color: #fff;
+  margin-top: 15rpx;
+}
+.content .usermain .orders .ordertitle {
+  padding: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.content .usermain .orders .ordercontent {
+  display: flex;
+  text-align: center;
+  padding: 15rpx 0;
+}
+.content .usermain .orders .ordercontent navigator {
+  flex: 1;
+}
+.content .usermain .orders .ordercontent navigator .iconfont {
+  color: var(--themecolor);
+}
+.content .usermain .address {
+  background-color: #fff;
+  margin-top: 30rpx;
+  padding: 15rpx;
+}
+.content .usermain .qtxx {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.content .usermain .qtxx .item {
+  padding: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.content .usermain .qtxx .itemlxkf {
+  padding: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.content .usermain .tj {
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 15rpx;
+}

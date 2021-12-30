@@ -1,0 +1,65 @@
+<view class="infowrap">
+<view class="imgwrap" wx:if="{{userInfo.avatarUrl}}">
+<image class="bg" src="{{userInfo.avatarUrl}}"></image>
+<view class="userinfo">
+<image class="usericon" mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+<view class="username">{{userInfo.nickName}}</view>
+</view>
+</view>
+<view wx:else class="userbtn">
+<navigator url="../login/index">登录</navigator>
+</view>
+</view>
+<view class="content">
+<view class="usermain">
+<view class="history">
+<navigator>
+<view class="hisnum">0</view>
+<view class="hisname">收藏的店铺</view>
+</navigator>
+<navigator url="../collect/index">
+<view class="hisnum">{{collectnum}}</view>
+<view class="hisname">收藏的商品</view>
+</navigator>
+<navigator>
+<view class="hisnum">0</view>
+<view class="hisname">关注的商品</view>
+</navigator>
+<navigator>
+<view class="hisnum">0</view>
+<view class="hisname">我的足迹</view>
+</navigator>
+</view>
+<view class="orders">
+<view class="ordertitle">我的订单</view>
+<view class="ordercontent">
+<navigator url="../order/index?type=1">
+<view class="iconfont icon-dingdan"></view>
+<view class="text">全部订单</view>
+</navigator>
+<navigator url="../order/index?type=2">
+<view class="iconfont icon-fukuantongzhi"></view>
+<view class="text">代付款</view>
+</navigator>
+<navigator url="../order/index?type=3">
+<view class="iconfont icon-gouwuche"></view>
+<view class="text">待收货</view>
+</navigator>
+<navigator >
+<view class="iconfont icon-tuikuantuihuo"></view>
+<view class="text">退款/退货</view>
+</navigator>
+</view>
+</view>
+<view class="address">收货地址管理</view>
+<view class="qtxx">
+<view class="itemlxkf">
+<text>联系客服</text>
+<text>400-123-1234</text>
+</view>
+<view class="item">意见反馈</view>
+<view class="item">关于我们</view>
+</view>
+<view class="tj">推荐给其他人</view>
+</view>
+</view>

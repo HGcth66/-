@@ -1,0 +1,42 @@
+.swiperclass swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+.swiperclass swiper image {
+  width: 100%;
+}
+.dhclass {
+  display: flex;
+}
+.dhclass navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.dhclass navigator image {
+  width: 100%;
+}
+.lcclass {
+  overflow: hidden;
+}
+.lcclass .lcgroup .lctitle {
+  padding: 10rpx 0;
+}
+.lcclass .lcgroup .lctitle image {
+  width: 100%;
+}
+.lcclass .lcgroup .lclist navigator {
+  float: left;
+  width: 33.3%;
+}
+.lcclass .lcgroup .lclist navigator:nth-last-child(-n+4) {
+  height: 27.72111207vw;
+  border-left: 10rpx solid #fff;
+}
+.lcclass .lcgroup .lclist navigator:nth-child(2),
+.lcclass .lcgroup .lclist navigator:nth-child(3) {
+  border-bottom: 10rpx solid #fff;
+}
+.lcclass .lcgroup .lclist image {
+  width: 100%;
+  height: 100%;
+}

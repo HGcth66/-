@@ -1,0 +1,112 @@
+page{
+    background-color: #eee;
+}
+.infowrap{
+    height: 45vh;
+    position: relative;
+    .imgwrap{
+        position: relative;
+        .bg{
+            height: 45vh;
+            filter: blur(5rpx);
+        }
+        .userinfo{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            .usericon{
+                border-radius: 50%;
+                width: 150rpx;
+                height: 150rpx;
+            }
+            .username{
+                margin-top: 40rpx;
+                font-size: 40rpx;
+                color: #fff;
+            }
+        }
+    }
+    .userbtn{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--themecolor);
+        border: 1rpx solid currentColor;
+        font-size: 38rpx;
+        border-radius: 10rpx;
+        padding: 20rpx;
+    }
+    
+}
+.content{
+    position: relative;
+    .usermain{
+        position: absolute;
+        top: -40rpx;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        padding-bottom: 100rpx;
+        .history{
+            background-color: #fff;
+            display: flex;
+            navigator{
+                flex: 1;
+                text-align: center;
+                padding: 10rpx 0;
+                .hisnum{
+                    color: var(--themecolor);
+                }
+                .hisname{}
+            }
+
+        }
+        .orders{
+            background-color: #fff;
+            margin-top: 15rpx;
+            .ordertitle{
+            padding: 15rpx;
+            border-bottom: 1rpx solid #ccc;
+            }
+            .ordercontent{
+                display: flex;
+                text-align: center;
+                padding: 15rpx 0;
+                navigator{
+                    flex: 1;
+                    .iconfont{
+                        color: var(--themecolor);
+                    }
+                    .text{}
+                }
+            }
+        }
+        .address{
+        background-color: #fff;
+        margin-top: 30rpx;
+        padding: 15rpx;
+        }
+        .qtxx{
+            background-color: #fff;
+            margin-top: 20rpx;
+            .item{
+                padding: 15rpx;
+                border-bottom: 1rpx solid #ccc;
+            }
+            .itemlxkf{
+                padding: 15rpx;
+                border-bottom: 1rpx solid #ccc;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .tj{
+            background-color: #fff;
+            margin-top: 20rpx;
+            padding: 15rpx;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<view wx:if="{{address.userName}}" class="info">
+    <view class="leftinfo">
+        <view>{{address.userName}}</view>
+        <view>{{address.provinceName+address.cityName+address.countyName+address.detailInfo}}</view>
+    </view>
+    <view class="rightinfo">
+        {{address.telNumber}}</view>
+</view>
+<view class="gwctext">购物车</view>
+<view class="goodsitem" wx:for="{{cart}}" wx:key="goods_id">
+    <view class="spgwc">
+        <navigator class="goodsimg">
+            <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+        </navigator>
+        <view class="goodswrap">
+            <view class="goodsxx">{{item.goods_name}}</view>
+            <view class="goodspricewrap">
+                <view class="goodsprice">￥{{item.goods_price}}</view>
+                <view class="jjwrap">
+                    <view class="jjtext">X {{item.num}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="footer">
+    <view class="priceall">
+        <view>合计：<text class="priceallwrap">￥{{totoilprice}}</text></view>
+        <view>包含运费</view>
+    </view>
+    <view class="js" bindtap="djzf">
+        支付（{{totoilnum}}）
+    </view>
+</view>

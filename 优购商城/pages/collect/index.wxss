@@ -1,0 +1,44 @@
+.collect .collecttitle {
+  margin-top: 40rpx;
+}
+.collect .collecttitle .collecttext {
+  border: 1rpx solid #ccc;
+  margin-left: 15rpx ;
+  padding: 15rpx;
+}
+.collect .collecttitle .active {
+  color: var(--themecolor);
+  border-color: currentColor;
+}
+.collect .collectcontent {
+  margin-top: 40rpx;
+}
+.collect .collectcontent .item {
+  display: flex;
+  border-bottom: 1rpx solid #666;
+}
+.collect .collectcontent .item .img {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collect .collectcontent .item .img image {
+  width: 70%;
+}
+.collect .collectcontent .item .goods {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.collect .collectcontent .item .goods .goodsname {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.collect .collectcontent .item .goods .goodsjg {
+  color: var(--themecolor);
+  font-size: 32rpx;
+}

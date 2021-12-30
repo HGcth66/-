@@ -1,0 +1,36 @@
+page {
+  background-color: #dedede;
+  padding: 20rpx;
+}
+.search .title {
+  height: 70rpx;
+  display: flex;
+}
+.search .title .input {
+  height: 100%;
+  flex: 9;
+  background-color: #fff;
+  padding-left: 15rpx;
+}
+.search .title button {
+  flex: 1;
+  height: 100%;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rpx;
+  font-weight: normal;
+}
+.search .content {
+  margin-top: 20rpx;
+}
+.search .content .item {
+  background-color: #fff;
+  border-bottom: 1rpx solid #ccc;
+  padding: 15rpx 10rpx;
+  font-size: 30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis ;
+}

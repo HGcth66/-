@@ -1,0 +1,41 @@
+<view class="detail">
+    <swiper autoplay circular indicator-dots>
+        <swiper-item wx:for="{{goodsobj.pics}}" bindtap="djimage" data-url="{{item.pics_mid}}">
+            <image mode="widthFix" src="{{item.pics_mid}}"></image>
+        </swiper-item>
+    </swiper>
+    <view class="goodsprice">￥{{goodsobj.goods_price}}</view>
+    <view class="goodsnamewrap">
+        <view class="goodsname">{{goodsobj.goods_name}}</view>
+        <view class="collect" bindtap="djcollect">
+            <text class="iconfont {{iscollect?'icon-shoucangfill':'icon-shoucang'}}"></text>
+            <view class="collecttext">收藏</view>
+        </view>
+    </view>
+    <view class="infor">
+        <view class="infortitle">图文详情</view>
+        <view class="inforcontent">
+            <rich-text nodes="{{goodsobj.goods_introduce}}">
+            </rich-text>
+        </view>
+    </view>
+    <view class="tool">
+        <view class="item">
+            <view class="iconfont icon-kefu"></view>
+            <view>客服</view>
+            <button open-type="contact"></button>
+        </view>
+        <view class="item">
+            <view class="iconfont icon-fenxiang"></view>
+            <view>分享</view>
+            <button open-type="share"></button>
+        </view>
+        <navigator open-type="switchTab" url="../cart/index" class="item">
+            <view class="iconfont icon-gouwuche"></view>
+            <view>购物车</view>
+        </navigator>
+        <view class="item btncart" bindtap="jrgwc">加入购物车</view>
+    <view class="item btnbuy">立即购买</view>
+    </view>
+
+</view>

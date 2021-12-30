@@ -1,0 +1,18 @@
+<searchinput></searchinput>
+<tabs tabs="{{tabs}}" bindtabsItemChange="djtabschange">
+    <block wx:if="{{tabs[0].isA}}">
+        <view class="first">
+            <navigator class="item" wx:for="{{goodsList}}" wx:key="goods_id" url="../../pages/goods_detail/index?goods_id={{item.goods_id}}">
+                <view class="img">
+                    <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://cdn.jsdelivr.net/gh/HGcth66/image/no.jpg'}}"></image>
+                </view>
+                <view class="goods">
+                    <view class="goodsname">{{item.goods_name}}</view>
+                    <view class="goodsjg">￥{{item.goods_price}}</view>
+                </view>
+            </navigator>
+        </view>
+    </block>
+    <block wx:if="{{tabs[1].isA}}">1</block>
+    <block wx:if="{{tabs[2].isA}}">2</block>
+</tabs>

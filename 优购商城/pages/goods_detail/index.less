@@ -1,0 +1,99 @@
+page{
+    padding-bottom: 90rpx;
+}
+.detail{
+    swiper{
+        height: 65vw;
+        text-align: center;
+        image{
+        width: 60%;
+        }
+    }
+    .goodsprice{
+        color: var(--themecolor);
+        padding: 15rpx;
+        font-size: 32rpx;
+        font-weight: 600;
+    }
+    .goodsnamewrap{
+        display: flex;
+        border-top: 5rpx solid #dedede;
+        border-bottom: 5rpx solid #dedede;
+        padding: 10rpx 0;
+        .goodsname{
+            flex: 5;
+            color: #000;
+            padding: 0 10rpx;
+            font-size: 30rpx;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        .collect{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 1rpx solid #000;
+            .collecttext{}
+            .icon-shoucangfill{
+                color: #ff3300;
+            }
+        }
+    }
+    .infor{
+        padding: 0;
+        margin: 0;
+        .infortitle{
+            font-size: 32rpx;
+            color: var(--themecolor);
+            padding: 10rpx;
+            font-weight: 600;
+        }
+        .inforcontent{}
+    }
+    .tool{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 90rpx;
+        background-color: #fff;
+        display: flex;
+        .item{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 24rpx;
+            position: relative;
+            button{
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            }
+        }
+        .btncart{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#ffa500;
+            color: #fff;
+        }
+        .btnbuy{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#eb4450;
+            color: #fff;
+        }
+    }
+}

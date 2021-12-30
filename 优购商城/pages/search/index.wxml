@@ -1,0 +1,9 @@
+<view class="search">
+<veiw class="title">
+<input value="{{inputtext}}" type="text" bindinput="inputchange" placeholder="请输入您要搜索的商品" class="input"></input>
+<button bindtap="djcannel" hidden="{{!ishidden}}">取消</button>
+</veiw>
+<view class="content">
+<navigator url="../goods_detail/index?goods_id={{item.goods_id}}" class="item" wx:for="{{goods}}" wx:key="good_id">{{item.goods_name}}</navigator>
+</view>
+</view>

@@ -1,0 +1,47 @@
+.collect{
+    .collecttitle{
+        margin-top: 40rpx;
+        .collecttext{
+            border: 1rpx solid #ccc;
+            margin-left:15rpx ;
+            padding: 15rpx;
+            
+        }
+        .active{
+            color: var(--themecolor);
+            border-color: currentColor;
+        }
+    }
+    .collectcontent{
+        margin-top: 40rpx;
+        .item{
+            display: flex;
+            border-bottom: 1rpx solid #666;
+            .img{
+                flex: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                image{
+                    width: 70%;
+                }
+            }
+            .goods{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .goodsname{
+                    display:-webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 2;
+                }
+                .goodsjg{
+                    color: var(--themecolor);
+                    font-size: 32rpx;
+                }
+            }
+        }
+    }
+}
